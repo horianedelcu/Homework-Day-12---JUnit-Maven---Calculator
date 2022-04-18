@@ -1178,3 +1178,77 @@
 2022-04-19 01:49:59,168 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
 2022-04-19 01:49:59,169 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
 2022-04-19 01:49:59,170 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
+2022-04-19 02:04:42,902 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [1] 10, 0
+2022-04-19 02:04:42,938 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [1] 10, 0
+2022-04-19 02:04:42,954 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [2] 0, 10
+2022-04-19 02:04:42,954 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [2] 0, 10
+2022-04-19 02:04:42,970 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [3] -2, 0
+2022-04-19 02:04:42,971 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [3] -2, 0
+2022-04-19 02:04:42,974 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [4] 0, -2
+2022-04-19 02:04:42,976 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [4] 0, -2
+2022-04-19 02:04:42,979 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyNoOperands shouldMultiplyNoOperands()
+2022-04-19 02:04:42,981 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyNoOperands shouldMultiplyNoOperands()
+2022-04-19 02:04:42,983 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenVeryBigNumbers shouldMultiplyGivenVeryBigNumbers()
+2022-04-19 02:04:42,984 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenVeryBigNumbers shouldMultiplyGivenVeryBigNumbers()
+2022-04-19 02:04:42,990 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [1] 2.2, 4.3
+2022-04-19 02:04:42,990 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [1] 2.2, 4.3
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [2] -2.2, 4
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [2] -2.2, 4
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [3] 2.2, -4
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [3] 2.2, -4
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenNegativeNumbers shouldMultiplyGivenNegativeNumbers()
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenNegativeNumbers shouldMultiplyGivenNegativeNumbers()
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldFactorialGivenNIsZero shouldFactorialGivenNIsZero()
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldFactorialGivenNIsZero shouldFactorialGivenNIsZero()
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldPowGivenNegativeExponent shouldPowGivenNegativeExponent()
+2022-04-19 02:04:42,996 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldPowGivenNegativeExponent shouldPowGivenNegativeExponent()
+2022-04-19 02:04:43,011 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldPowGivenFloatingBase shouldPowGivenFloatingBase()
+2022-04-19 02:04:43,012 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldPowGivenFloatingBase shouldPowGivenFloatingBase()
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldPowGivenExponentIsZero shouldPowGivenExponentIsZero()
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldPowGivenExponentIsZero shouldPowGivenExponentIsZero()
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddNoOperands shouldAddNoOperands()
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddNoOperands shouldAddNoOperands()
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddGivenNegativeNumbers [1] -2, -4
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddGivenNegativeNumbers [1] -2, -4
+2022-04-19 02:04:43,014 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddGivenNegativeNumbers [2] -3, -8
+2022-04-19 02:04:43,030 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddGivenNegativeNumbers [2] -3, -8
+2022-04-19 02:04:43,180 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [1] 1, 2, 3
+2022-04-19 02:04:43,181 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [1] 1, 2, 3
+2022-04-19 02:04:43,183 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [2] 2, 4, 5
+2022-04-19 02:04:43,184 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [2] 2, 4, 5
+2022-04-19 02:04:43,186 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [3] 6, 7, 8
+2022-04-19 02:04:43,186 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [3] 6, 7, 8
+2022-04-19 02:04:43,189 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [4] 1, 2, 3
+2022-04-19 02:04:43,189 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [4] 1, 2, 3
+2022-04-19 02:04:43,189 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [5] 2, 4, 5
+2022-04-19 02:04:43,189 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [5] 2, 4, 5
+2022-04-19 02:04:43,196 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddNumbersGivenOperand0 [1] 0, 2
+2022-04-19 02:04:43,196 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddNumbersGivenOperand0 [1] 0, 2
+2022-04-19 02:04:43,196 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddNumbersGivenOperand0 [2] 2, 0
+2022-04-19 02:04:43,196 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddNumbersGivenOperand0 [2] 2, 0
+2022-04-19 02:04:43,196 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyOneOperand shouldMultiplyOneOperand()
+2022-04-19 02:04:43,196 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyOneOperand shouldMultiplyOneOperand()
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [1] 2
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [1] 2
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [2] 8
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [2] 8
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [3] 20
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [3] 20
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddGivenVeryBigNumbers shouldAddGivenVeryBigNumbers()
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddGivenVeryBigNumbers shouldAddGivenVeryBigNumbers()
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [1] -2, 4
+2022-04-19 02:04:43,211 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [1] -2, 4
+2022-04-19 02:04:43,228 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [2] 4, -2
+2022-04-19 02:04:43,229 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [2] 4, -2
+2022-04-19 02:04:43,230 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldAddOneOperand shouldAddOneOperand()
+2022-04-19 02:04:43,231 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldAddOneOperand shouldAddOneOperand()
+2022-04-19 02:04:43,233 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldPowGivenNegativeBase shouldPowGivenNegativeBase()
+2022-04-19 02:04:43,233 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldPowGivenNegativeBase shouldPowGivenNegativeBase()
+2022-04-19 02:04:43,237 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [1] 1, 2, 3
+2022-04-19 02:04:43,238 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [1] 1, 2, 3
+2022-04-19 02:04:43,240 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [2] 1, 2, -3
+2022-04-19 02:04:43,240 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [2] 1, 2, -3
+2022-04-19 02:04:43,242 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
+2022-04-19 02:04:43,243 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
+2022-04-19 02:04:43,245 INFO c.e.e.TestReporterExtension [main] Starting test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
+2022-04-19 02:04:43,245 INFO c.e.e.TestReporterExtension [main] Finishing test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()

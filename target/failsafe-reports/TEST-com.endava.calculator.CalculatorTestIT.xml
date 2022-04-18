@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.endava.calculator.CalculatorTestIT" time="0.306" tests="33" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.endava.calculator.CalculatorTestIT" time="0.477" tests="37" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Zulu-OpenJDK-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\hnedelcu\AppData\Local\Temp\surefire14879498604091465483\surefirebooter6898282698367675947.jar C:\Users\hnedelcu\AppData\Local\Temp\surefire14879498604091465483 2022-04-19T01-49-56_535-jvmRun1 surefire7034331648967158811tmp surefire_016988857745256954870tmp"/>
+    <property name="sun.java.command" value="C:\Users\hnedelcu\AppData\Local\Temp\surefire3640478271041984479\surefirebooter10869651145930552911.jar C:\Users\hnedelcu\AppData\Local\Temp\surefire3640478271041984479 2022-04-19T02-04-39_407-jvmRun1 surefire8377370671991724982tmp surefire_04227071022397836489tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\hnedelcu\IdeaProjects\mavenCalc\target\test-classes;C:\Users\hnedelcu\IdeaProjects\mavenCalc\target\mavenCalc-1.0-SNAPSHOT.jar;C:\Users\hnedelcu\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\hnedelcu\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\hnedelcu\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\hnedelcu\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\hnedelcu\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\hnedelcu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\hnedelcu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\hnedelcu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\hnedelcu\.m2\repository\commons-dbutils\commons-dbutils\1.7\commons-dbutils-1.7.jar;C:\Users\hnedelcu\.m2\repository\mysql\mysql-connector-java\8.0.28\mysql-connector-java-8.0.28.jar;C:\Users\hnedelcu\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\hnedelcu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\hnedelcu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\hnedelcu\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\hnedelcu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hnedelcu\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\hnedelcu\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\hnedelcu\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="jdk.vendor.version" value="Zulu11.54+25-CA"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\hnedelcu\AppData\Local\Temp\surefire14879498604091465483\surefirebooter6898282698367675947.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hnedelcu\AppData\Local\Temp\surefire3640478271041984479\surefirebooter10869651145930552911.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.14.1+1-LTS"/>
@@ -61,42 +61,42 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.061">
+  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.099">
     <system-out><![CDATA[Before All
 Before Each
-01:49:58.959 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [1] 10, 0
+02:04:42.902 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [1] 10, 0
 0
-01:49:58.984 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [1] 10, 0
+02:04:42.938 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [1] 10, 0
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:58.996 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [2] 0, 10
+02:04:42.954 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [2] 0, 10
 0
-01:49:58.997 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [2] 0, 10
+02:04:42.954 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [2] 0, 10
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0.003">
     <system-out><![CDATA[Before Each
-01:49:59.001 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [3] -2, 0
+02:04:42.970 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [3] -2, 0
 0
-01:49:59.001 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [3] -2, 0
+02:04:42.971 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [3] -2, 0
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[4]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldMultiplyGivenOneOperandIs0(int, int)[4]" classname="com.endava.calculator.CalculatorTestIT" time="0.003">
     <system-out><![CDATA[Before Each
-01:49:59.005 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [4] 0, -2
+02:04:42.974 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [4] 0, -2
 0
-01:49:59.006 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [4] 0, -2
+02:04:42.976 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneOperandIs0 [4] 0, -2
 After Each
 
 
@@ -104,119 +104,149 @@ After Each
   </testcase>
   <testcase name="shouldMultiplyNoOperands" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
     <system-out><![CDATA[Before Each
-01:49:59.009 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyNoOperands shouldMultiplyNoOperands()
+02:04:42.979 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyNoOperands shouldMultiplyNoOperands()
 1
-01:49:59.010 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyNoOperands shouldMultiplyNoOperands()
+02:04:42.981 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyNoOperands shouldMultiplyNoOperands()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenVeryBigNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldMultiplyGivenVeryBigNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0.004">
     <system-out><![CDATA[Before Each
-01:49:59.012 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenVeryBigNumbers shouldMultiplyGivenVeryBigNumbers()
+02:04:42.983 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenVeryBigNumbers shouldMultiplyGivenVeryBigNumbers()
 4294967294
-01:49:59.012 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenVeryBigNumbers shouldMultiplyGivenVeryBigNumbers()
+02:04:42.984 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenVeryBigNumbers shouldMultiplyGivenVeryBigNumbers()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenFloatingNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0.003">
+  <testcase name="shouldMultiplyGivenFloatingNumbers(double, double)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
     <system-out><![CDATA[Before Each
-01:49:59.014 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers shouldMultiplyGivenFloatingNumbers()
+02:04:42.990 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [1] 2.2, 4.3
 9.46
-01:49:59.016 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers shouldMultiplyGivenFloatingNumbers()
+02:04:42.990 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [1] 2.2, 4.3
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenNegativeNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldMultiplyGivenFloatingNumbers(double, double)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.018 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenNegativeNumbers shouldMultiplyGivenNegativeNumbers()
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [2] -2.2, 4
+-8.8
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [2] -2.2, 4
+After Each
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldMultiplyGivenFloatingNumbers(double, double)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0">
+    <system-out><![CDATA[Before Each
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [3] 2.2, -4
+-8.8
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenFloatingNumbers [3] 2.2, -4
+After Each
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldMultiplyGivenNegativeNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0">
+    <system-out><![CDATA[Before Each
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenNegativeNumbers shouldMultiplyGivenNegativeNumbers()
 8
-01:49:59.018 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenNegativeNumbers shouldMultiplyGivenNegativeNumbers()
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenNegativeNumbers shouldMultiplyGivenNegativeNumbers()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFactorialGivenNIsZero" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldFactorialGivenNIsZero" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.020 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsZero shouldFactorialGivenNIsZero()
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsZero shouldFactorialGivenNIsZero()
 1
-01:49:59.020 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsZero shouldFactorialGivenNIsZero()
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsZero shouldFactorialGivenNIsZero()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldPowGivenNegativeExponent" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldPowGivenNegativeExponent" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.022 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenNegativeExponent shouldPowGivenNegativeExponent()
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenNegativeExponent shouldPowGivenNegativeExponent()
 0.25
-01:49:59.022 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenNegativeExponent shouldPowGivenNegativeExponent()
+02:04:42.996 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenNegativeExponent shouldPowGivenNegativeExponent()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldPowGivenFloatingBase" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldPowGivenFloatingBase" classname="com.endava.calculator.CalculatorTestIT" time="0.017">
     <system-out><![CDATA[Before Each
-01:49:59.024 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenFloatingBase shouldPowGivenFloatingBase()
+02:04:43.011 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenFloatingBase shouldPowGivenFloatingBase()
 10.648
-01:49:59.025 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenFloatingBase shouldPowGivenFloatingBase()
+02:04:43.012 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenFloatingBase shouldPowGivenFloatingBase()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldPowGivenExponentIsZero" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldPowGivenExponentIsZero" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.026 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenExponentIsZero shouldPowGivenExponentIsZero()
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenExponentIsZero shouldPowGivenExponentIsZero()
 1.0
-01:49:59.027 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenExponentIsZero shouldPowGivenExponentIsZero()
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenExponentIsZero shouldPowGivenExponentIsZero()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddNoOperands" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldAddNoOperands" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.030 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddNoOperands shouldAddNoOperands()
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddNoOperands shouldAddNoOperands()
 0
-01:49:59.030 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddNoOperands shouldAddNoOperands()
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddNoOperands shouldAddNoOperands()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddGivenNegativeNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldAddGivenNegativeNumbers(int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.032 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddGivenNegativeNumbers shouldAddGivenNegativeNumbers()
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddGivenNegativeNumbers [1] -2, -4
 -6
-01:49:59.032 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddGivenNegativeNumbers shouldAddGivenNegativeNumbers()
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddGivenNegativeNumbers [1] -2, -4
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.065">
+  <testcase name="shouldAddGivenNegativeNumbers(int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.016">
     <system-out><![CDATA[Before Each
-01:49:59.116 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [1] 1, 2, 3
+02:04:43.014 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddGivenNegativeNumbers [2] -3, -8
+-11
+02:04:43.030 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddGivenNegativeNumbers [2] -3, -8
+After Each
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+    <system-out><![CDATA[Before Each
+02:04:43.180 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [1] 1, 2, 3
 6
-01:49:59.117 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [1] 1, 2, 3
+02:04:43.181 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [1] 1, 2, 3
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
     <system-out><![CDATA[Before Each
-01:49:59.121 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [2] 2, 4, 5
+02:04:43.183 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [2] 2, 4, 5
 11
-01:49:59.122 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [2] 2, 4, 5
+02:04:43.184 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [2] 2, 4, 5
 After Each
 
 
@@ -224,129 +254,139 @@ After Each
   </testcase>
   <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
     <system-out><![CDATA[Before Each
-01:49:59.124 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [3] 6, 7, 8
+02:04:43.186 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [3] 6, 7, 8
 21
-01:49:59.124 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [3] 6, 7, 8
+02:04:43.186 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [3] 6, 7, 8
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[4]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[4]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.129 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [4] 1, 2, 3
+02:04:43.189 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [4] 1, 2, 3
 6
-01:49:59.129 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [4] 1, 2, 3
+02:04:43.189 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [4] 1, 2, 3
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[5]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldAddMoreThanTwoOperands(int, int, int)[5]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.131 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [5] 2, 4, 5
+02:04:43.189 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddMoreThanTwoOperands [5] 2, 4, 5
 11
-01:49:59.132 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [5] 2, 4, 5
+02:04:43.189 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddMoreThanTwoOperands [5] 2, 4, 5
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddNumbersGivenOperand0(int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldAddNumbersGivenOperand0(int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.136 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddNumbersGivenOperand0 [1] 0, 2
+02:04:43.196 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddNumbersGivenOperand0 [1] 0, 2
 2
-01:49:59.137 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddNumbersGivenOperand0 [1] 0, 2
+02:04:43.196 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddNumbersGivenOperand0 [1] 0, 2
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddNumbersGivenOperand0(int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldAddNumbersGivenOperand0(int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.139 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddNumbersGivenOperand0 [2] 2, 0
+02:04:43.196 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddNumbersGivenOperand0 [2] 2, 0
 2
-01:49:59.139 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddNumbersGivenOperand0 [2] 2, 0
+02:04:43.196 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddNumbersGivenOperand0 [2] 2, 0
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyOneOperand" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldMultiplyOneOperand" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.142 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyOneOperand shouldMultiplyOneOperand()
+02:04:43.196 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyOneOperand shouldMultiplyOneOperand()
 10
-01:49:59.142 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyOneOperand shouldMultiplyOneOperand()
+02:04:43.196 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyOneOperand shouldMultiplyOneOperand()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFactorialGivenNIsSmallNaturalNumber(int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+  <testcase name="shouldFactorialGivenNIsSmallNaturalNumber(int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.146 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [1] 2
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [1] 2
 2
-01:49:59.146 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [1] 2
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [1] 2
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFactorialGivenNIsSmallNaturalNumber(int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.003">
+  <testcase name="shouldFactorialGivenNIsSmallNaturalNumber(int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.148 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [2] 8
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [2] 8
 40320
-01:49:59.149 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [2] 8
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [2] 8
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFactorialGivenNIsSmallNaturalNumber(int)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldFactorialGivenNIsSmallNaturalNumber(int)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.151 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [3] 20
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [3] 20
 2432902008176640000
-01:49:59.152 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [3] 20
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldFactorialGivenNIsSmallNaturalNumber [3] 20
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddGivenVeryBigNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldAddGivenVeryBigNumbers" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.153 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddGivenVeryBigNumbers shouldAddGivenVeryBigNumbers()
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddGivenVeryBigNumbers shouldAddGivenVeryBigNumbers()
 2147483648
-01:49:59.154 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddGivenVeryBigNumbers shouldAddGivenVeryBigNumbers()
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddGivenVeryBigNumbers shouldAddGivenVeryBigNumbers()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyGivenOneNegativeOperand" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldMultiplyGivenOneNegativeOperand(int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0">
     <system-out><![CDATA[Before Each
-01:49:59.155 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand shouldMultiplyGivenOneNegativeOperand()
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [1] -2, 4
 -8
-01:49:59.156 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand shouldMultiplyGivenOneNegativeOperand()
+02:04:43.211 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [1] -2, 4
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldAddOneOperand" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldMultiplyGivenOneNegativeOperand(int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
     <system-out><![CDATA[Before Each
-01:49:59.157 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddOneOperand shouldAddOneOperand()
+02:04:43.228 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [2] 4, -2
+-8
+02:04:43.229 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyGivenOneNegativeOperand [2] 4, -2
+After Each
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAddOneOperand" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
+    <system-out><![CDATA[Before Each
+02:04:43.230 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldAddOneOperand shouldAddOneOperand()
 167
-01:49:59.158 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddOneOperand shouldAddOneOperand()
+02:04:43.231 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldAddOneOperand shouldAddOneOperand()
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldPowGivenNegativeBase" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldPowGivenNegativeBase" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
     <system-out><![CDATA[Before Each
-01:49:59.159 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenNegativeBase shouldPowGivenNegativeBase()
+02:04:43.233 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenNegativeBase shouldPowGivenNegativeBase()
 -8.0
-01:49:59.160 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenNegativeBase shouldPowGivenNegativeBase()
+02:04:43.233 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenNegativeBase shouldPowGivenNegativeBase()
 After Each
 
 
@@ -354,19 +394,19 @@ After Each
   </testcase>
   <testcase name="shouldMultiplyMoreThanTwoOperands(int, int, int)[1]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
     <system-out><![CDATA[Before Each
-01:49:59.163 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [1] 1, 2, 3
+02:04:43.237 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [1] 1, 2, 3
 6
-01:49:59.164 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [1] 1, 2, 3
+02:04:43.238 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [1] 1, 2, 3
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMultiplyMoreThanTwoOperands(int, int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldMultiplyMoreThanTwoOperands(int, int, int)[2]" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
     <system-out><![CDATA[Before Each
-01:49:59.165 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [2] 1, 2, -3
+02:04:43.240 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [2] 1, 2, -3
 -6
-01:49:59.166 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [2] 1, 2, -3
+02:04:43.240 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [2] 1, 2, -3
 After Each
 
 
@@ -374,19 +414,19 @@ After Each
   </testcase>
   <testcase name="shouldMultiplyMoreThanTwoOperands(int, int, int)[3]" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
     <system-out><![CDATA[Before Each
-01:49:59.167 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
+02:04:43.242 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
 40
-01:49:59.168 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
+02:04:43.243 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldMultiplyMoreThanTwoOperands [3] -2, -4, 5
 After Each
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="shouldPowGivenBaseIsZero" classname="com.endava.calculator.CalculatorTestIT" time="0.001">
+  <testcase name="shouldPowGivenBaseIsZero" classname="com.endava.calculator.CalculatorTestIT" time="0.002">
     <system-out><![CDATA[Before Each
-01:49:59.169 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
+02:04:43.245 [main] INFO  com.endava.extensions.TestReporterExtension - Starting test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
 0.0
-01:49:59.170 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
+02:04:43.245 [main] INFO  com.endava.extensions.TestReporterExtension - Finishing test CalculatorTestIT/shouldPowGivenBaseIsZero shouldPowGivenBaseIsZero()
 After Each
 
 

@@ -4,14 +4,24 @@ import com.endava.calculator.basic.Basic;
 import com.endava.calculator.basic.BasicOperations;
 import com.endava.calculator.expert.Expert;
 import com.endava.calculator.expert.ExpertOperations;
+//import com.endava.extensions.CustomTestExecutionListener;
 import com.endava.extensions.TestReporterExtension;
+import org.apiguardian.api.API;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.extension.Extensions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.engine.TestExecutionResult;
+import org.junit.platform.engine.reporting.ReportEntry;
+import org.junit.platform.launcher.TestExecutionListener;
+import org.junit.platform.launcher.TestIdentifier;
+import org.junit.platform.launcher.TestPlan;
+import org.junit.platform.launcher.listeners.LoggingListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +31,7 @@ public class CalculatorTestIT {
 
     private BasicOperations basic;
     private ExpertOperations expert;
+
 
     @BeforeAll
     public static void setUpAllTests() {
@@ -37,6 +48,7 @@ public class CalculatorTestIT {
         System.out.println("Before Each");
         basic = new Basic();
         expert = new Expert();
+
     }
 
     @AfterEach
@@ -73,14 +85,15 @@ public class CalculatorTestIT {
     }
 
     @Tags({@Tag("smoke"), @Tag("add")})
-    @Test
-    public void shouldAddGivenNegativeNumbers() {
+    @ParameterizedTest
+    @CsvSource({"-2, -4", "-3, -8"})
+    public void shouldAddGivenNegativeNumbers(int a, int b) {
 
         //GIVEN
 
 
         //WHEN
-        Long result = basic.add(-2, -4);
+        Long result = basic.add(a, b);
 
         //THEN
         System.out.println(result);
@@ -132,6 +145,7 @@ public class CalculatorTestIT {
     @ParameterizedTest
     @CsvFileSource(resources = "numberSource.csv")
     @CsvSource({"1,2,3", "2,4,5"})
+    @DisplayName("Should Add More Than Two Operands")
     public void shouldAddMoreThanTwoOperands(int a, int b, int c) {
 
         //GIVEN
@@ -219,13 +233,14 @@ public class CalculatorTestIT {
     }
 
     @Tag("multiply")
-    @Test
-    public void shouldMultiplyGivenOneNegativeOperand() {
+    @ParameterizedTest
+    @CsvSource({"-2, 4", "4, -2"})
+    public void shouldMultiplyGivenOneNegativeOperand(int a, int b) {
 
         //GIVEN
 
         //WHEN
-        Long result = basic.multiply(-2, 4);
+        Long result = basic.multiply(a, b);
 
         //THEN
         System.out.println(result);
@@ -246,13 +261,14 @@ public class CalculatorTestIT {
 
 
     @Tag("multiply")
-    @Test
-    public void shouldMultiplyGivenFloatingNumbers() {
+    @ParameterizedTest
+    @CsvSource({"2.2,4.3", "-2.2, 4,3", "2.2, -4,3"})
+    public void shouldMultiplyGivenFloatingNumbers(double a, double b) {
 
         //GIVEN
 
         //WHEN
-        Double result = basic.multiply(-2.2, -4.3);
+        Double result = basic.multiply(a, b);
 
         //THEN
         System.out.println(result);
