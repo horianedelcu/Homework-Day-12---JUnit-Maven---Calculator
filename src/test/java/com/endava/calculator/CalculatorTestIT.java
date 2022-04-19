@@ -18,10 +18,11 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.engine.TestExecutionResult;
 import org.junit.platform.engine.reporting.ReportEntry;
-import org.junit.platform.launcher.TestExecutionListener;
-import org.junit.platform.launcher.TestIdentifier;
-import org.junit.platform.launcher.TestPlan;
+import org.junit.platform.launcher.*;
+import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
+import org.junit.platform.launcher.core.LauncherFactory;
 import org.junit.platform.launcher.listeners.LoggingListener;
+import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,6 +47,7 @@ public class CalculatorTestIT {
     @BeforeEach
     public void setUpEachTest() {
         System.out.println("Before Each");
+
         basic = new Basic();
         expert = new Expert();
 

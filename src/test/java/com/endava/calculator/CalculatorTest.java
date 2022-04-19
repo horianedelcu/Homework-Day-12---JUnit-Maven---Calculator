@@ -18,19 +18,31 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.engine.TestExecutionResult;
 import org.junit.platform.engine.reporting.ReportEntry;
-import org.junit.platform.launcher.TestExecutionListener;
-import org.junit.platform.launcher.TestIdentifier;
-import org.junit.platform.launcher.TestPlan;
+import org.junit.platform.launcher.*;
+import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
+import org.junit.platform.launcher.core.LauncherFactory;
 import org.junit.platform.launcher.listeners.LoggingListener;
+import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
+import org.junit.platform.launcher.listeners.TestExecutionSummary;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.platform.engine.discovery.ClassNameFilter.includeClassNamePatterns;
+import static org.junit.platform.engine.discovery.DiscoverySelectors.selectClass;
+import static org.junit.platform.engine.discovery.DiscoverySelectors.selectPackage;
+import static org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder.request;
 
 @ExtendWith(TestReporterExtension.class)
 public class CalculatorTest {
 
     private BasicOperations basic;
     private ExpertOperations expert;
+
 
 
     @BeforeAll
@@ -66,28 +78,29 @@ public class CalculatorTest {
     @Tags({@Tag("smoke"), @Tag("ui"), @Tag("add")})
     @ParameterizedTest
     @MethodSource("numberProvider")
-    public void shouldAddNumbersGivenOperand0(int a, int b) {
+    public void shouldAddNumbersGivenOperand0(int a, int b, long expected) {
 
         //GIVEN
 
         //WHEN
         long result = basic.add(a, b);
         //THEN
-        System.out.println(result);
+        assertThat(result, is(expected));
+        assertThat(result, notNullValue());
     }
 
     public static List<Arguments> numberProvider() {
         List<Arguments> argumentsList = new ArrayList<>();
-        argumentsList.add(Arguments.of(0, 2));
-        argumentsList.add(Arguments.of(2, 0));
+        argumentsList.add(Arguments.of(0, 2, 2));
+        argumentsList.add(Arguments.of(2, 0, 2));
 
         return argumentsList;
     }
 
     @Tags({@Tag("smoke"), @Tag("add")})
     @ParameterizedTest
-    @CsvSource({"-2, -4", "-3, -8"})
-    public void shouldAddGivenNegativeNumbers(int a, int b) {
+    @CsvSource({"-2, -4, -6", "-3, -8, -11"})
+    public void shouldAddGivenNegativeNumbers(int a, int b, long expected) {
 
         //GIVEN
 
@@ -96,20 +109,21 @@ public class CalculatorTest {
         Long result = basic.add(a, b);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(expected));
+        assertThat(result, notNullValue());
     }
 
     @Tags({@Tag("smoke"), @Tag("api"), @Tag("add")})
     @Test
     public void shouldAddGivenVeryBigNumbers() {
 
-        //GIVEN
-
-
         //WHEN
         Long result = basic.add(Integer.MAX_VALUE, 1);
 
         //THEN
+        assertThat(result, is(2147483648L));
+        assertThat(result, greaterThan(0L));
+        assertThat(result, notNullValue());
         System.out.println(result);
     }
 
@@ -124,7 +138,8 @@ public class CalculatorTest {
         Long result = basic.add();
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(0L));
+        assertTrue(result.equals(0L));
     }
 
     @Tag("add")
@@ -138,15 +153,17 @@ public class CalculatorTest {
         Long result = basic.add(167);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(167L));
+        assertThat(result, notNullValue());
+        assertTrue(result.equals(167L));
     }
 
     @Tag("add")
     @ParameterizedTest
     @CsvFileSource(resources = "numberSource.csv")
-    @CsvSource({"1,2,3", "2,4,5"})
+    @CsvSource({"1,2,3,6", "2,4,5,11"})
     @DisplayName("Should Add More Than Two Operands")
-    public void shouldAddMoreThanTwoOperands(int a, int b, int c) {
+    public void shouldAddMoreThanTwoOperands(int a, int b, int c, long expected) {
 
         //GIVEN
 
@@ -155,7 +172,8 @@ public class CalculatorTest {
         Long result = basic.add(a, b, c);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(expected));
+        assertThat(result, notNullValue());
     }
 
 
@@ -176,7 +194,7 @@ public class CalculatorTest {
         Long result = basic.multiply();
 
         //THEN
-        System.out.println(result);
+        assertThat(result, notNullValue());
     }
 
     @Tag("multiply")
@@ -189,13 +207,15 @@ public class CalculatorTest {
         Long result = basic.multiply(10);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(10L));
+        assertThat(result, notNullValue());
+        assertThat(result, greaterThan(0L));
     }
 
     @Tag("multiply")
     @ParameterizedTest
-    @CsvSource({"1,2,3", "1,2,-3" ,"-2,-4,5"})
-    public void shouldMultiplyMoreThanTwoOperands(int a, int b, int c) {
+    @CsvSource({"1,2,3,6", "1,2,-3,-6" ,"-2,-4,5,40"})
+    public void shouldMultiplyMoreThanTwoOperands(int a, int b, int c, long expected) {
 
         //GIVEN
 
@@ -203,7 +223,10 @@ public class CalculatorTest {
         Long result = basic.multiply(a, b, c);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(expected));
+        assertThat(result, notNullValue());
+        assertThat(result, not(0L));
+
     }
 
     @Tag("multiply")
@@ -216,7 +239,8 @@ public class CalculatorTest {
         Long result = basic.multiply(a, b);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(0L));
+        assertThat(result, notNullValue());
     }
 
     @Tag("multiply")
@@ -228,14 +252,17 @@ public class CalculatorTest {
         //WHEN
         Long result = basic.multiply(Integer.MAX_VALUE, 2);
 
+
         //THEN
-        System.out.println(result);
+        assertThat(result, greaterThan(Long.valueOf(Integer.MAX_VALUE)));
+        assertThat(result, not(Long.valueOf(Integer.MAX_VALUE)));
+        assertThat(result, is(4294967294L) );
     }
 
     @Tag("multiply")
     @ParameterizedTest
-    @CsvSource({"-2, 4", "4, -2"})
-    public void shouldMultiplyGivenOneNegativeOperand(int a, int b) {
+    @CsvSource({"-2, 4,-8", "4, -2,-8"})
+    public void shouldMultiplyGivenOneNegativeOperand(int a, int b, long expected) {
 
         //GIVEN
 
@@ -243,35 +270,38 @@ public class CalculatorTest {
         Long result = basic.multiply(a, b);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(-8L));
+        assertThat(result, lessThan(0L));
+        assertThat(result, notNullValue());
+        assertThat(result, not(0L));
     }
 
     @Tag("multiply")
     @Test
     public void shouldMultiplyGivenNegativeNumbers() {
 
-        //GIVEN
-
         //WHEN
         Long result = basic.multiply(-2, -4);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(8L));
+        assertThat(result, not(0L));
+        assertThat(result, notNullValue());
     }
 
 
     @Tag("multiply")
     @ParameterizedTest
-    @CsvSource({"2.2,4.3", "-2.2, 4,3", "2.2, -4,3"})
-    public void shouldMultiplyGivenFloatingNumbers(double a, double b) {
-
-        //GIVEN
+    @CsvSource({"2.2, 4.3, 9.46", "-2.2, 4.3, -9.46", "2.2, -4.3, -9.46", "-2.2, -4.3, 9.46"})
+    public void shouldMultiplyGivenFloatingNumbers(double a, double b, double expected) {
 
         //WHEN
         Double result = basic.multiply(a, b);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(expected));
+        assertThat(result, not(0.0));
+        assertThat(result, notNullValue());
     }
 
 
@@ -286,13 +316,14 @@ public class CalculatorTest {
     @Test
     public void shouldPowGivenNegativeBase() {
 
-        //GIVEN
 
         //WHEN
         Double result = expert.pow(-2, 3);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(-8.0));
+        assertThat(result, not(0.0));
+        assertThat(result, notNullValue());
     }
 
 
@@ -300,39 +331,40 @@ public class CalculatorTest {
     @Test
     public void shouldPowGivenNegativeExponent() {
 
-        //GIVEN
-
         //WHEN
         Double result = expert.pow(2, -2);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(0.25));
+        assertThat(result, lessThan(1.0));
+        assertThat(result, not(0.0));
     }
 
     @Tag("pow")
     @Test
     public void shouldPowGivenFloatingBase() {
 
-        //GIVEN
-
         //WHEN
         Double result = expert.pow(2.2, 3);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(10.648));
+        assertThat(result, greaterThan(0.0));
+        assertThat(result, notNullValue());
     }
 
     @Tag("pow")
-    @Test
-    public void shouldPowGivenExponentIsZero() {
-
-        //GIVEN
+    @ParameterizedTest
+    @CsvSource({"2, 0", "10, 0", "321421, 0"})
+    public void shouldPowGivenExponentIsZero(double base, int exponent) {
 
         //WHEN
-        Double result = expert.pow(2, 0);
+        Double result = expert.pow(base, exponent);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(1.0));
+        assertThat(result, not(0.0));
+
     }
 
 
@@ -346,7 +378,8 @@ public class CalculatorTest {
         Double result = expert.pow(0, 20);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(0.0));
+        assertThat(result, notNullValue());
     }
 
 
@@ -366,13 +399,14 @@ public class CalculatorTest {
         Long result = expert.factRec(0);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(1L));
+        assertThat(result, notNullValue());
     }
 
     @Tag("factorial")
     @ParameterizedTest
-    @CsvSource({"2","8","20"})
-    public void shouldFactorialGivenNIsSmallNaturalNumber(int a) {
+    @CsvSource({"2, 2","8, 40320","20, 2432902008176640000"})
+    public void shouldFactorialGivenNIsSmallNaturalNumber(int a, long expected) {
 
         //GIVEN
 
@@ -380,36 +414,41 @@ public class CalculatorTest {
         Long result = expert.factRec(a);
 
         //THEN
-        System.out.println(result);
+        assertThat(result, is(expected));
+        assertThat(result, greaterThan(0L));
+        assertThat(result, notNullValue());
     }
 
-//    @Tag("factorial")
-//    @Test
-//    public void shouldFactorialGivenNIsABigNumber() {
-//
-//        //GIVEN
-//
-//        //WHEN
-//        Long result = expert.factRec(Integer.MAX_VALUE);
-//
-//        //THEN
-//        System.out.println(result);
-//    }
+
+    // BUG nr. 1
+    @Tag("factorial")
+    @Test
+    public void shouldFactorialGivenNIsABigNumber() {
+
+        assertThrows(StackOverflowError.class, () -> {
+
+            //WHEN
+            Long result = expert.factRec(Integer.MAX_VALUE);
+
+            //THEN
+            assertThat(result, greaterThan(Long.valueOf(Integer.MAX_VALUE)));
+            assertThat(result, greaterThan(0L));
+            assertThat(result, instanceOf(Long.class));
+        });
+    }
 
 
+    @Tag("factorial")
+    @Test
+    public void shouldFactorialGivenNIsANegativeNumber() {
 
-//    @Tag("factorial")
-//    @Test
-//    public void shouldFactorialGivenNIsANegativeNumber() {
-//
-//        //GIVEN
-//
-//        //WHEN
-//        Long result = expert.factRec(-3);
-//
-//        //THEN
-//        System.out.println(result);
-//    }
+        assertThrows(IllegalArgumentException.class, () -> {
+
+            //WHEN
+            Long result = expert.factRec(-3);
+        });
+
+    }
 
 
 }
